@@ -185,12 +185,13 @@ body {
   display: flex;
   align-items: center;
   margin-left: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; 
+  flex-shrink: 0; 
 }
 
 @media (min-width: 992px) {
   #filters {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     overflow-x: visible;
     justify-content: center;
     margin-left: auto;
