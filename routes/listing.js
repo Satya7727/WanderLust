@@ -16,8 +16,8 @@ router
 .post(isLoggedIn,upload.single('listing[image]'), wrapAsync(listingController.createListing));
 
 //finding category
-router
-  .get("/index", wrapAsync(listingController.indexCategory))
+router("/index")
+  .get(wrapAsync(listingController.indexCategory))
 
 //New Route
 router.get("/new",isLoggedIn,listingController.renderNewForm);
