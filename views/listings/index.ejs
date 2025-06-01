@@ -1,60 +1,4 @@
 <% layout("/layouts/boilerplate") %>
-
-<style>
-  #filters {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    align-items: center;
-    padding: 1rem;
-    gap: 2rem;
-    scroll-behavior: smooth;
-    margin-top: 1rem;
-  }
-
-  #filters::-webkit-scrollbar {
-    display: none;
-  }
-
-  #filters {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  .filter {
-    text-align: center;
-    color: black;
-    opacity: 0.7;
-    flex: 0 0 auto;
-    text-decoration: none;
-  }
-
-  .filter:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-
-  .filter p {
-    font-size: 0.8rem;
-    margin-top: 0.3rem;
-  }
-
-  .tax-info {
-    display: none;
-  }
-
-  .tax-toggle {
-    border: 1px solid black;
-    border-radius: 1rem;
-    height: 2.8rem;
-    padding: 0 1rem;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    flex: 0 0 auto;
-  }
-</style>
-
 <div id="filters" class="mb-1">
   <a href="/listings/index?category=Trendings" class="filter"><div><i class="fa-solid fa-fire"></i></div><p>Trending</p></a>
   <a href="/listings/index?category=Rooms" class="filter"><div><i class="fa-solid fa-bed"></i></div><p>Rooms</p></a>
@@ -70,7 +14,7 @@
   <div class="tax-toggle">
     <div class="form-check-reverse form-switch">
       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-      <label class="form-check-label" for="flexSwitchCheckDefault">Display total after taxes</label>
+      <label class="form-check-label" for="flexSwitchCheckDefault">Taxes</label>
     </div>
   </div>
 </div>
