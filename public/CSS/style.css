@@ -120,6 +120,8 @@ body {
 #map {
   height: 400px;
   width: 100%;
+  border: 1 ps solid black;
+  border-radius: 2rem;
 }
 
 /* filters */
